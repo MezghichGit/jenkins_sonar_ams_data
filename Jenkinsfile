@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/MezghichGit/jenkins_sonar_ams_data.git']]]
+                echo 'Get project from git'
             }
         }
 
