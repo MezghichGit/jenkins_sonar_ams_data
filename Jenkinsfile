@@ -1,3 +1,9 @@
+pipeline {
+
+    agent any 
+
+    stages {
+
 stage('Sonarqube') {
                 steps {
                  
@@ -11,3 +17,5 @@ stage('Sonarqube') {
                       }
 
            }
+		   }
+}
